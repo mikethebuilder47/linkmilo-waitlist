@@ -1,8 +1,8 @@
 /* styles/Home.module.css */
 .container {
-    max-width: 1200px; /* Limit container width */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Add horizontal padding */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    width: 100vw; /* Full viewport width */
 }
 
 .hero {
@@ -14,9 +14,9 @@
 }
 
 .waitlistMessage {
-    font-size: 24px; /* Increase size for emphasis */
-    font-weight: 500; /* Medium weight for better emphasis */
-    margin-top: 10px; /* Space above the message */
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .waitlistForm {
@@ -27,27 +27,27 @@
 }
 
 .input {
-    padding: 15px; /* Increase padding for a larger input field */
+    padding: 15px;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 300px; /* Maintain width */
-    font-size: 18px; /* Increase font size for the placeholder */
+    width: 300px;
+    font-size: 18px;
 }
 
 .button {
-    background-color: #2563eb; /* Blue background */
+    background-color: #2563eb;
     color: white;
-    padding: 15px 30px; /* Increase padding for a larger button */
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 18px; /* Increase font size for the button text */
+    font-size: 18px;
 }
 
     .button:hover {
-        background-color: #1d4ed8; /* Darker blue on hover */
+        background-color: #1d4ed8;
     }
 
 .signupCounter {
@@ -72,31 +72,30 @@
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Icon colors */
 .icon-ai {
-    color: #4caf50; /* Green for AI */
+    color: #4caf50;
 }
 
 .icon-template {
-    color: #2196f3; /* Blue for Templates */
+    color: #2196f3;
 }
 
 .icon-color {
-    color: #ff9800; /* Orange for Color Palettes */
+    color: #ff9800;
 }
 
 .icon-analytics {
-    color: #f44336; /* Red for Analytics */
+    color: #f44336;
 }
 
 .featureCard:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-    background-color: #f9fafb; /* Lighten background on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f9fafb;
 }
 
 .faq {
