@@ -1,0 +1,147 @@
+/* styles/Home.module.css */
+.container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.hero {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%; /* Full width */
+}
+
+.waitlistMessage {
+    font-size: 24px; /* Increase size for emphasis */
+    font-weight: 500; /* Medium weight for better emphasis */
+    margin-top: 10px; /* Space above the message */
+}
+
+.waitlistForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input {
+    padding: 15px; /* Increase padding for a larger input field */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px; /* Maintain width */
+    font-size: 18px; /* Increase font size for the placeholder */
+}
+
+.button {
+    background-color: #2563eb; /* Blue background */
+    color: white;
+    padding: 15px 30px; /* Increase padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Increase font size for the button text */
+}
+
+    .button:hover {
+        background-color: #1d4ed8; /* Darker blue on hover */
+    }
+
+.signupCounter {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.featureCard {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    text-align: center; /* Center the text */
+}
+
+/* Icon colors */
+.icon-ai {
+    color: #4caf50; /* Green for AI */
+}
+
+.icon-template {
+    color: #2196f3; /* Blue for Templates */
+}
+
+.icon-color {
+    color: #ff9800; /* Orange for Color Palettes */
+}
+
+.icon-analytics {
+    color: #f44336; /* Red for Analytics */
+}
+
+.featureCard:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    background-color: #f9fafb; /* Lighten background on hover */
+}
+
+.faq {
+    padding: 40px 20px;
+    background-color: #f3f4f6; /* Light background for FAQ */
+}
+
+.faqItem {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 0;
+}
+
+.faqQuestion {
+    cursor: pointer;
+    color: #3b82f6; /* Blue color for questions */
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center items vertically */
+    transition: color 0.3s ease;
+}
+
+    .faqQuestion:hover {
+        color: #1d4ed8; /* Darker blue on hover */
+    }
+
+.faqAnswer {
+    padding: 10px 0;
+    color: #333; /* Darker text for answers */
+    margin-left: 20px; /* Indent answers */
+}
+
+.footer {
+    width: 100%; /* Full width */
+    padding: 20px 0;
+    text-align: center;
+    background-color: #111827; /* Dark background */
+    color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero, .footer {
+        padding: 20px 10px; /* Adjust padding for mobile */
+    }
+
+    .input, .button {
+        width: 90%; /* Make input and button responsive */
+    }
+}
