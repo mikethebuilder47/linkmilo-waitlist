@@ -146,18 +146,3 @@
     color: white;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .container {
-        padding: 0; /* Remove padding for mobile */
-    }
-
-    .hero, .footer {
-        padding: 20px 10px; /* Adjust padding for mobile */
-    }
-
-    .input, .button {
-        width: 90%; /* Make input and button responsive */
-        font-size: 16px; /* Adjust font size for better readability */
-    }
-}
