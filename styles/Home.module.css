@@ -30,9 +30,9 @@
     margin-top: 20px;
     width: 100%;
     max-width: 400px;
+    padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
 }
 
 .input {
@@ -87,14 +87,14 @@
 .features {
     padding: 40px 20px;
     text-align: center;
-    background-color: #ffffff; /* Explicit light background */
-    color: #333; /* Explicit text color for light mode */
+    background-color: #ffffff;
+    color: #333;
 }
 
     .features h2 {
-        font-size: 28px; /* Adjusted font size for mobile */
+        font-size: 28px;
         font-weight: bold;
-        color: #333; /* Ensures color consistency */
+        color: #333;
         margin-bottom: 30px;
     }
 
@@ -106,8 +106,8 @@
 }
 
 .featureCard {
-    background: #ffffff; /* Explicit white background */
-    color: #333; /* Ensures text color consistency */
+    background: #ffffff;
+    color: #333;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 20px;
@@ -157,7 +157,7 @@
 }
 
     .faqContainer h2 {
-        font-size: 28px; /* Adjusted for mobile */
+        font-size: 28px;
         font-weight: bold;
         color: #333;
         text-align: center;
@@ -197,7 +197,7 @@
 }
 
 .faqToggleIcon {
-    font-size: 14px; /* Reduced size for icon */
+    font-size: 14px;
     color: #3b82f6;
     margin-left: 10px;
     flex-shrink: 0;
@@ -237,7 +237,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 30px 15px; /* Reduced padding for mobile */
+        padding: 30px 15px;
     }
 
     .waitlistForm {
@@ -245,19 +245,25 @@
         padding: 0 15px;
     }
 
-    .featureCard {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+    .input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 12px;
     }
 
     .featureGrid {
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
     }
 
-    .emailUsageText {
-        padding: 0 15px;
+    .featureCard {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .faqContainer {
