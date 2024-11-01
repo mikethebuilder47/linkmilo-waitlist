@@ -87,12 +87,14 @@
 .features {
     padding: 40px 20px;
     text-align: center;
+    background-color: #ffffff; /* Explicit light background */
+    color: #333; /* Explicit text color for light mode */
 }
 
     .features h2 {
         font-size: 28px; /* Adjusted font size for mobile */
         font-weight: bold;
-        color: #333;
+        color: #333; /* Ensures color consistency */
         margin-bottom: 30px;
     }
 
@@ -100,11 +102,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Reduced gap for better mobile layout */
+    gap: 20px;
 }
 
 .featureCard {
-    background: white;
+    background: #ffffff; /* Explicit white background */
+    color: #333; /* Ensures text color consistency */
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 20px;
@@ -154,7 +157,7 @@
 }
 
     .faqContainer h2 {
-        font-size: 28px; /* Reduced for mobile friendliness */
+        font-size: 28px; /* Adjusted for mobile */
         font-weight: bold;
         color: #333;
         text-align: center;
@@ -194,7 +197,7 @@
 }
 
 .faqToggleIcon {
-    font-size: 14px; /* Smaller icon size for mobile */
+    font-size: 14px; /* Reduced size for icon */
     color: #3b82f6;
     margin-left: 10px;
     flex-shrink: 0;
@@ -262,6 +265,6 @@
     }
 
     .faqToggleIcon {
-        font-size: 12px; /* Further reduced icon size for smaller screens */
+        font-size: 12px;
     }
 }
