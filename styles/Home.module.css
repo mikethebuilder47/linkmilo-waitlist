@@ -15,12 +15,16 @@
     color: white;
     text-align: center;
     padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 .waitlistMessage {
     font-size: 24px;
     font-weight: 500;
     margin-top: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .waitlistForm {
@@ -30,9 +34,8 @@
     margin-top: 20px;
     width: 100%;
     max-width: 400px;
-    padding: 0 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .input {
@@ -42,6 +45,7 @@
     margin-bottom: 10px;
     width: 100%;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 .button {
@@ -69,18 +73,21 @@
     font-size: 16px;
     color: #fff;
     margin-top: 10px;
+    text-align: center;
 }
 
 .signupCounter {
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .emailUsageText {
     margin-top: 20px;
     color: #fff;
-    padding: 0 20px;
+    padding: 0 15px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Features Section */
@@ -96,6 +103,9 @@
         font-weight: bold;
         color: #333;
         margin-bottom: 30px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 .featureGrid {
@@ -103,6 +113,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .featureCard {
@@ -114,7 +126,9 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
 }
 
 .icon {
@@ -148,6 +162,7 @@
     padding: 40px 20px;
     background-color: #f3f4f6;
     margin-bottom: 60px;
+    box-sizing: border-box;
 }
 
 .faqContainer {
@@ -162,6 +177,9 @@
         color: #333;
         text-align: center;
         margin-bottom: 30px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 .faqItem {
@@ -211,20 +229,6 @@
     border-top: 1px solid #e5e7eb;
 }
 
-.faqItem:first-child .faqQuestion {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.faqItem:last-child .faqAnswer {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
-.faqItem:last-child {
-    margin-bottom: 0;
-}
-
 /* Footer */
 .footer {
     width: 100%;
@@ -237,7 +241,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero {
-        padding: 30px 15px;
+        padding: 20px 15px;
     }
 
     .waitlistForm {
@@ -256,7 +260,6 @@
     }
 
     .featureGrid {
-        justify-content: center;
         gap: 15px;
     }
 
