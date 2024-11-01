@@ -1,5 +1,7 @@
+// src/app/layout.js
+
 import localFont from "next/font/local";
-import "./globals.css";
+import "./globals.css"; // This should now correctly point to globals.css
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
         {children}
       </body>

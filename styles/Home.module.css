@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,12 +14,14 @@
     color: white;
     text-align: center;
     padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 .waitlistMessage {
     font-size: 24px;
     font-weight: 500;
     margin-top: 10px;
+    padding: 0 20px;
 }
 
 .waitlistForm {
@@ -29,10 +30,11 @@
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    max-width: 400px; /* Adjusted to fit mobile screens */
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .input {
@@ -42,6 +44,7 @@
     margin-bottom: 10px;
     width: 100%;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 .button {
@@ -54,6 +57,7 @@
     transition: background-color 0.3s ease;
     font-size: 18px;
     width: 100%;
+    box-sizing: border-box;
 }
 
     .button:hover {
@@ -69,11 +73,13 @@
     font-size: 16px;
     color: #fff;
     margin-top: 10px;
+    padding: 0 20px;
 }
 
 .signupCounter {
     margin-top: 20px;
     font-weight: bold;
+    padding: 0 20px;
 }
 
 .emailUsageText {
@@ -87,6 +93,7 @@
 .features {
     padding: 40px 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
     .features h2 {
@@ -96,8 +103,8 @@
 .featureGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the items */
-    gap: 30px; /* Increased gap for better spacing */
+    justify-content: center;
+    gap: 30px;
 }
 
 .featureCard {
@@ -108,7 +115,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px; /* Fixed width to control the size */
+    width: 250px;
+    box-sizing: border-box;
 }
 
 .icon {
@@ -116,19 +124,19 @@
 }
 
 .icon-ai {
-    color: #ff5722; /* Deep Orange */
+    color: #ff5722;
 }
 
 .icon-template {
-    color: #9c27b0; /* Purple */
+    color: #9c27b0;
 }
 
 .icon-color {
-    color: #4caf50; /* Green */
+    color: #4caf50;
 }
 
 .icon-analytics {
-    color: #03a9f4; /* Light Blue */
+    color: #03a9f4;
 }
 
 .featureCard:hover {
@@ -142,12 +150,14 @@
     padding: 40px 20px;
     background-color: #f3f4f6;
     margin-bottom: 60px;
+    box-sizing: border-box;
 }
 
 .faqContainer {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
     .faqContainer h2 {
@@ -177,6 +187,7 @@
     width: 100%;
     text-align: left;
     transition: background-color 0.3s ease;
+    box-sizing: border-box;
 }
 
     .faqQuestion:hover {
@@ -188,7 +199,7 @@
 }
 
 .faqToggleIcon {
-    font-size: 16px; /* Reduced font size */
+    font-size: 16px;
     color: #3b82f6;
     margin-left: 10px;
     flex-shrink: 0;
@@ -200,6 +211,7 @@
     background-color: #fff;
     font-size: 16px;
     border-top: 1px solid #e5e7eb;
+    box-sizing: border-box;
 }
 
 .faqItem:first-child .faqQuestion {
@@ -224,35 +236,64 @@
     text-align: center;
     background-color: #111827;
     color: white;
+    box-sizing: border-box;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .waitlistMessage {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
     .waitlistForm {
-        width: 100%;
-        padding: 0 20px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .message,
+    .signupCounter,
+    .emailUsageText {
+        font-size: 14px;
+        padding: 0 10px;
     }
 
     .featureCard {
-        width: 100%; /* Make cards full width on mobile */
-        max-width: 300px;
+        width: 100%;
         margin: 0 auto;
+        max-width: 400px;
     }
 
     .featureGrid {
-        justify-content: center;
         gap: 20px;
-    }
-
-    .emailUsageText {
-        padding: 0 20px;
     }
 
     .faqContainer {
         padding: 0 10px;
     }
 
-    .faqToggleIcon {
-        font-size: 16px; /* Ensure consistent size on mobile */
+    .faqQuestion {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .faqAnswer {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+
+    .footer {
+        padding: 15px 0;
+        font-size: 14px;
     }
 }
