@@ -59,11 +59,7 @@ export default function Home() {
       }
     } catch (error) {
       console.error('Error:', error);
-      if (error.response && error.response.data && error.response.data.message) {
-        setMessage(error.response.data.message);
-      } else {
-        setMessage('Something went wrong, please try again.');
-      }
+      setMessage('Something went wrong, please try again.');
     } finally {
       setLoading(false);
     }
@@ -80,32 +76,32 @@ export default function Home() {
     {
       question: 'Is LinkMilo free?',
       answer:
-        'Yes, absolutely! For now, LinkMilo is completely free! You can dive in and enjoy all the awesome features we offer without spending a dime.',
+        'Yes, absolutely! For now, LinkMilo is completely free! You can dive in and enjoy all the awesome features we offer without spending a dime. Our mission is to help creators like you thrive without the pressure of upfront costs. So, take advantage of everything we have while it’s still free!',
     },
     {
       question: 'Who is this tool for?',
       answer:
-        'LinkMilo is designed for everyone! Whether you’re a content creator, influencer, or a business looking to enhance your online presence, LinkMilo has something for you.',
+        'LinkMilo is designed for everyone! Whether you’re a content creator, influencer, or a business looking to enhance your online presence, LinkMilo has something for you. We aim to empower all types of personal brands with our easy-to-use features.',
     },
     {
       question: 'What are the AI capabilities in LinkMilo?',
       answer:
-        'Our AI is like your creative buddy! It can whip up catchy usernames and personalized bios that reflect your unique style.',
+        'Our AI is like your creative buddy! It can whip up catchy usernames and personalized bios that reflect your unique style. Plus, it’ll suggest color palettes that perfectly match your vibe, making it super easy to create a stunning link page. We\'re all about helping you stand out and engage with your audience effectively.',
     },
     {
       question: 'How does LinkMilo compare to other link-in-bio tools?',
       answer:
-        'LinkMilo combines easy customization with smart AI features and powerful analytics.',
+        'Great question! While other tools might offer just the basics, LinkMilo goes a step further. We combine easy customization with smart AI features and powerful analytics. This means you can create a truly personalized link-in-bio page while gaining insights into how your audience interacts with your content. We\'re committed to evolving and providing you with an all-in-one solution that grows alongside you!',
     },
     {
       question: 'What templates and color palettes can I use?',
       answer:
-        "LinkMilo comes loaded with a variety of customizable templates to fit your brand's personality.",
+        'You\'ll love this! LinkMilo comes loaded with a variety of customizable templates to fit your brand\'s personality. Whether you\'re into a clean, minimalistic look or something more colorful and vibrant, we\'ve got you covered. Plus, our AI will help you choose the best color combinations that express who you are. Mix and match until it feels just right!',
     },
     {
       question: 'How much will premium plans cost after launch?',
       answer:
-        'Right now, we’re focused on keeping LinkMilo free, but we may consider a paid plan in the future.',
+        'Right now, we’re focused on keeping LinkMilo free. But as we grow and add even more fantastic features, we’ll consider introducing a paid plan in the future. Here’s the best part: if you join our waitlist, you could score discounts of up to 80% when we launch those paid options! Early supporters like you will get some sweet perks, so don’t miss out!',
     },
   ];
 
