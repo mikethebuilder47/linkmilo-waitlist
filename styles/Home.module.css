@@ -1,5 +1,6 @@
 /* styles/Home.module.css */
 
+/* Container Styles */
 .container {
     margin: 0;
     padding: 0;
@@ -89,7 +90,7 @@
 }
 
     .features h2 {
-        font-size: 32px; /* Specific font size for section heading */
+        font-size: 28px; /* Adjusted font size for mobile */
         font-weight: bold;
         color: #333;
         margin-bottom: 30px;
@@ -99,7 +100,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px; /* Reduced gap for better mobile layout */
 }
 
 .featureCard {
@@ -153,7 +154,7 @@
 }
 
     .faqContainer h2 {
-        font-size: 32px;
+        font-size: 28px; /* Reduced for mobile friendliness */
         font-weight: bold;
         color: #333;
         text-align: center;
@@ -193,7 +194,7 @@
 }
 
 .faqToggleIcon {
-    font-size: 16px;
+    font-size: 14px; /* Smaller icon size for mobile */
     color: #3b82f6;
     margin-left: 10px;
     flex-shrink: 0;
@@ -232,9 +233,13 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .hero {
+        padding: 30px 15px; /* Reduced padding for mobile */
+    }
+
     .waitlistForm {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .featureCard {
@@ -249,10 +254,14 @@
     }
 
     .emailUsageText {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
     .faqContainer {
-        padding: 0 10px;
+        padding: 0 15px;
+    }
+
+    .faqToggleIcon {
+        font-size: 12px; /* Further reduced icon size for smaller screens */
     }
 }
