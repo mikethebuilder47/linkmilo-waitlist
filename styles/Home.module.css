@@ -1,10 +1,10 @@
 /* styles/Home.module.css */
 
-/* Container Styles */
 .container {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,14 +14,12 @@
     color: white;
     text-align: center;
     padding: 40px 20px;
-    box-sizing: border-box;
 }
 
 .waitlistMessage {
     font-size: 24px;
     font-weight: 500;
     margin-top: 10px;
-    padding: 0 20px;
 }
 
 .waitlistForm {
@@ -30,11 +28,10 @@
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .input {
@@ -44,7 +41,6 @@
     margin-bottom: 10px;
     width: 100%;
     font-size: 18px;
-    box-sizing: border-box;
 }
 
 .button {
@@ -57,7 +53,6 @@
     transition: background-color 0.3s ease;
     font-size: 18px;
     width: 100%;
-    box-sizing: border-box;
 }
 
     .button:hover {
@@ -73,13 +68,11 @@
     font-size: 16px;
     color: #fff;
     margin-top: 10px;
-    padding: 0 20px;
 }
 
 .signupCounter {
     margin-top: 20px;
     font-weight: bold;
-    padding: 0 20px;
 }
 
 .emailUsageText {
@@ -93,10 +86,12 @@
 .features {
     padding: 40px 20px;
     text-align: center;
-    box-sizing: border-box;
 }
 
     .features h2 {
+        font-size: 32px; /* Specific font size for section heading */
+        font-weight: bold;
+        color: #333;
         margin-bottom: 30px;
     }
 
@@ -116,7 +111,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
-    box-sizing: border-box;
 }
 
 .icon {
@@ -150,17 +144,18 @@
     padding: 40px 20px;
     background-color: #f3f4f6;
     margin-bottom: 60px;
-    box-sizing: border-box;
 }
 
 .faqContainer {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
     .faqContainer h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -187,7 +182,6 @@
     width: 100%;
     text-align: left;
     transition: background-color 0.3s ease;
-    box-sizing: border-box;
 }
 
     .faqQuestion:hover {
@@ -211,7 +205,6 @@
     background-color: #fff;
     font-size: 16px;
     border-top: 1px solid #e5e7eb;
-    box-sizing: border-box;
 }
 
 .faqItem:first-child .faqQuestion {
@@ -224,7 +217,6 @@
     border-bottom-right-radius: 8px;
 }
 
-/* Remove bottom margin from the last item */
 .faqItem:last-child {
     margin-bottom: 0;
 }
@@ -236,64 +228,31 @@
     text-align: center;
     background-color: #111827;
     color: white;
-    box-sizing: border-box;
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
-    .waitlistMessage {
-        font-size: 20px;
-        padding: 0 10px;
-    }
-
+@media (max-width: 768px) {
     .waitlistForm {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .input {
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    .button {
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    .message,
-    .signupCounter,
-    .emailUsageText {
-        font-size: 14px;
-        padding: 0 10px;
+        width: 100%;
+        padding: 0 20px;
     }
 
     .featureCard {
         width: 100%;
+        max-width: 300px;
         margin: 0 auto;
-        max-width: 400px;
     }
 
     .featureGrid {
+        justify-content: center;
         gap: 20px;
+    }
+
+    .emailUsageText {
+        padding: 0 20px;
     }
 
     .faqContainer {
         padding: 0 10px;
-    }
-
-    .faqQuestion {
-        font-size: 16px;
-        padding: 15px 10px;
-    }
-
-    .faqAnswer {
-        font-size: 14px;
-        padding: 15px 10px;
-    }
-
-    .footer {
-        padding: 15px 0;
-        font-size: 14px;
     }
 }
