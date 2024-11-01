@@ -1,14 +1,17 @@
 /* styles/Home.module.css */
+
+/* Container Styles */
 .container {
-    margin: 0; /* Remove margins */
-    padding: 0; /* Remove padding */
-    max-width: 100vw; /* Full viewport width */
-    overflow-x: hidden; /* Hide overflow */
-    font-family: Arial, Helvetica, sans-serif; /* Ensure consistent font */
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3b82f6, #60a5fa); /* Gradient background */
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -32,7 +35,7 @@
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
-    width: 300px; /* Width for larger screens */
+    width: 300px;
     font-size: 18px;
 }
 
@@ -48,8 +51,19 @@
 }
 
     .button:hover {
-        background-color: #1d4ed8; /* Darker shade on hover */
+        background-color: #1d4ed8;
     }
+
+    .button:disabled {
+        background-color: #aaa;
+        cursor: not-allowed;
+    }
+
+.message {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
 
 .signupCounter {
     margin-top: 20px;
@@ -57,20 +71,26 @@
 }
 
 .emailUsage {
-    margin-top: 20px; /* Space above the section */
-    font-size: 1rem; /* Standard font size */
-    color: #ddd; /* Softer color for less emphasis */
-    text-align: center; /* Center align text */
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ddd;
+    text-align: center;
 }
 
 .emailUsageText {
-    margin-top: 5px; /* Space above the text */
+    margin-top: 5px;
+    color: #fff;
 }
 
+/* Features Section */
 .features {
     padding: 40px 20px;
     text-align: center;
 }
+
+    .features h2 {
+        margin-bottom: 30px;
+    }
 
 .featureGrid {
     display: grid;
@@ -88,20 +108,24 @@
     text-align: center;
 }
 
+.icon {
+    margin-bottom: 10px;
+}
+
 .icon-ai {
-    color: #4caf50;
+    color: #ff5722; /* Deep Orange */
 }
 
 .icon-template {
-    color: #2196f3;
+    color: #9c27b0; /* Purple */
 }
 
 .icon-color {
-    color: #ff9800;
+    color: #4caf50; /* Green */
 }
 
 .icon-analytics {
-    color: #f44336;
+    color: #03a9f4; /* Light Blue */
 }
 
 .featureCard:hover {
@@ -110,39 +134,118 @@
     background-color: #f9fafb;
 }
 
-.faq {
+/* FAQ Section */
+.faqSection {
     padding: 40px 20px;
-    background-color: #f3f4f6; /* Light background for FAQ */
+    background-color: #f3f4f6;
+    /* Added margin-bottom to create space before the footer */
+    margin-bottom: 60px;
 }
 
+.faqContainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .faqContainer h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
 .faqItem {
-    border-bottom: 1px solid #e5e7eb;
-    padding: 10px 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
 }
 
 .faqQuestion {
     cursor: pointer;
-    color: #3b82f6; /* Blue color for questions */
-    display: flex; /* Use flex to align items */
-    align-items: center; /* Center items vertically */
-    transition: color 0.3s ease;
+    color: #3b82f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
 }
 
     .faqQuestion:hover {
-        color: #1d4ed8; /* Darker blue on hover */
+        background-color: #e0e0e0;
     }
 
-.faqAnswer {
-    padding: 10px 0;
-    color: #333; /* Darker text for answers */
-    margin-left: 20px; /* Indent answers */
+.faqToggleIcon {
+    font-size: 18px;
+    line-height: 1;
+    color: #3b82f6;
 }
 
+.faqAnswer {
+    padding: 15px 20px;
+    color: #333;
+    background-color: #fff;
+    font-size: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.faqItem:first-child .faqQuestion {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.faqItem:last-child .faqAnswer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Remove bottom margin from the last item */
+.faqItem:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer */
 .footer {
-    width: 100%; /* Full width */
+    width: 100%;
     padding: 20px 0;
     text-align: center;
-    background-color: #111827; /* Dark background */
+    background-color: #111827;
     color: white;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .waitlistForm {
+        width: 100%;
+    }
+
+    .input,
+    .button {
+        width: 100%;
+    }
+
+    .featureGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .featureCard {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .emailUsageText {
+        padding: 0 20px;
+    }
+
+    .faqContainer {
+        padding: 0 10px;
+    }
+}
