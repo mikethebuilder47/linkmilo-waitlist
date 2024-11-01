@@ -9,8 +9,8 @@ import {
   faFileAlt,
   faPaintBrush,
   faChartLine,
-  faPlus,
-  faMinus,
+  faChevronDown,
+  faChevronUp,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
@@ -133,7 +133,7 @@ export default function Home() {
         <p className={styles.signupCounter}>{count}+ creators have already signed up!</p>
 
         <p className={styles.emailUsageText}>
-          We only use your email address to keep you updated about LinkMilo and its features.
+          * We only use your email address to keep you updated about LinkMilo and its features.
           Rest assured, your information will never be shared with third parties.
           Join us and be part of our growing community!
         </p>
@@ -188,9 +188,11 @@ export default function Home() {
           {faqItems.map((item, index) => (
             <div key={index} className={styles.faqItem}>
               <button onClick={() => toggleFaq(index)} className={styles.faqQuestion}>
-                {item.question}
+                <span className={styles.faqQuestionText}>{item.question}</span>
                 <span className={styles.faqToggleIcon}>
-                  <FontAwesomeIcon icon={faqOpen[index] ? faMinus : faPlus} />
+                  <FontAwesomeIcon
+                    icon={faqOpen[index] ? faChevronUp : faChevronDown}
+                  />
                 </span>
               </button>
               {faqOpen[index] && (
